@@ -15,15 +15,15 @@
     <button onclick="connectToBle()">connect</button>
     <br>
     <br>
-    <button id="w" onclick="sendData('W\n')">Up</button>
+    <button id="w" onmousedown="sendData('W\n')" onmouseup="sendData('P\n')">Up</button>
     <br>
     <br>
-    <button onclick="sendData('A\n')">Left</button>
-    <button onclick="sendData('S\n')">Down</button>
-    <button onclick="sendData('D\n')">Right</button>
+    <button onmousedown="sendData('A\n')" onmouseup="sendData('P\n')">Left</button>
+    <button onmousedown="sendData('S\n')" onmouseup="sendData('P\n')">Down</button>
+    <button onmousedown="sendData('D\n')" onmouseup="sendData('P\n')">Right</button>
     <br>
     <br>
-    <button onclick="sendData('P\n')">stop</button>
+    <button onmousedown="sendData('P\n')">stop</button>
     <script>
         const serviceUuid = "0000ffe0-0000-1000-8000-00805f9b34fb";
         let myCharacteristic;
